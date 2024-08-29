@@ -5,6 +5,14 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+  var decimal=num-Math.floor(num);
+  if (num === 0 || decimal === 0){
+    return true;
+  }else if(decimal < 1 || decimal > -1){
+    return false;
+  }else{
+    return true;
+  } 
 }
 
 module.exports = esEntero;

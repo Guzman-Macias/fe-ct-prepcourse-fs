@@ -7,6 +7,12 @@ function esNumeroEntero(numero) {
   // -1212 ---> true 
   // 121.212 ---> false 
   // Tu código:
+  resul=Number.isInteger(numero)
+  if (resul === true){
+    return true
+  }else{
+    return false
+  }
 }
 
 module.exports = esNumeroEntero;
